@@ -1,0 +1,240 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #f7e9f5 0%, #f3cdeb 100%);
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+  width: 90%;
+  max-width: 960px;
+  background: #ffcdea;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 30px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #a14bd0, #e94ca4);
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 16px 16px 0 0;
+  box-sizing: border-box;
+}
+.header-icon .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-top: 8px;
+  letter-spacing: 0.3px;
+}
+
+/* ===== INTRODUÇÃO ===== */
+.introduction {
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.intro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #1a1a1c;
+  color: #d69ef4;
+  padding: 10px 20px;
+  border-radius: 35px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.badge-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.intro-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ===== SEÇÃO DE VÍDEO ===== */
+.video-section {
+  background: #c18edc;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-placeholder {
+  background: #fff;
+  border: 2px dashed #00000092;
+  border-radius: 18px;
+  padding: 45px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.play-button {
+  background: linear-gradient(135deg, #8f3ff7, #f06da4);
+  color: #fff;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.play-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.video-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #b16edd;
+  margin-bottom: 10px;
+}
+
+.video-description {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ===== CARTÕES ===== */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 50px 30px;
+}
+
+.content-card {
+  background: #f7d5f1;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 28px rgba(230,0,180,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(157,9,93,0.2);
+}
+
+.card-purple {
+  border-top: 6px solid #d6a8fc;
+}
+
+.card-pink {
+  border-top: 6px solid #f06da4;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #c23bd2;
+  margin-bottom: 12px;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  color: #444;
+  line-height: 1.8;
+}
+
+/* ===== RODAPÉ ===== */
+.footer {
+  background: #c18edc;
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: #555;
+  border-radius: 0 0 20px 20px;
+}
+
+.footer-icon {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.footer-name {
+  font-weight: 600;
+  color: #000000;
+}
+
+.footer p {
+  margin-top: 5px;
+  font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+  .header {
+    padding: 35px 15px;
+  }
+
+  .introduction,
+  .content-grid {
+    padding: 25px 15px;
+  }
+
+  .video-placeholder {
+    padding: 30px;
+  }
+
+  .main-title {
+    font-size: 1.6rem;
+  }
+}
